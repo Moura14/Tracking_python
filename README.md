@@ -14,14 +14,14 @@ Pip install opencv-python
 Visão Geral do Código
 
 O código apresenta as seguintes etapas:
-Importação de Bibliotecas: Importa as bibliotecas necessárias, incluindo cv2 para OpenCV, sys para operações do sistema e randint para geração de cores aleatórias.
-Definição do Tipo de Rastreador: Define o tipo de rastreador a ser utilizado, selecionando um dos algoritmos de rastreamento disponíveis. Os algoritmos de rastreamento suportados são 'BOOSTING', 'MIL', 'KCF', 'TLD', 'MEDIANFLOW', 'MOSSE' e 'CSRT'.
-Criação do Rastreador: Dependendo da versão do OpenCV, cria um objeto de rastreamento correspondente ao tipo selecionado.
-Abertura do Vídeo: Carrega um vídeo a partir do caminho especificado e verifica se foi aberto com sucesso.
-Inicialização do Rastreamento: Lê o primeiro quadro do vídeo e permite que o usuário selecione a região de interesse (ROI) para rastrear. Inicializa o rastreador com a ROI selecionada.
-Loop de Rastreamento: Entra em um loop para ler cada quadro do vídeo. Para cada quadro, atualiza o rastreador para calcular a nova posição da ROI. Se o rastreamento for bem-sucedido, desenha um retângulo na posição da ROI, redimensiona a ROI e a salva como uma imagem. Caso contrário, exibe uma mensagem de falha.
-Exibição do Resultado: Exibe o quadro do vídeo com a ROI rastreada, o tipo de rastreador utilizado e a taxa de quadros por segundo (FPS). O loop de exibição pode ser interrompido pressionando a tecla 'Esc'.
-Liberação de Recursos: Após a conclusão do rastreamento, o vídeo é liberado e todas as janelas são fechadas.
+- Importação de Bibliotecas: Importa as bibliotecas necessárias, incluindo cv2 para OpenCV, sys para operações do sistema e randint para geração de cores aleatórias.
+- Definição do Tipo de Rastreador: Define o tipo de rastreador a ser utilizado, selecionando um dos algoritmos de rastreamento disponíveis. Os algoritmos de rastreamento suportados são 'BOOSTING', 'MIL', 'KCF', 'TLD', 'MEDIANFLOW', 'MOSSE' e 'CSRT'.
+- Criação do Rastreador: Dependendo da versão do OpenCV, cria um objeto de rastreamento correspondente ao tipo selecionado.
+- Abertura do Vídeo: Carrega um vídeo a partir do caminho especificado e verifica se foi aberto com sucesso.
+- Inicialização do Rastreamento: Lê o primeiro quadro do vídeo e permite que o usuário selecione a região de interesse (ROI) para rastrear. - Inicializa o rastreador com a ROI selecionada.
+- Loop de Rastreamento: Entra em um loop para ler cada quadro do vídeo. Para cada quadro, atualiza o rastreador para calcular a nova posição da ROI. - Se o rastreamento for bem-sucedido, desenha um retângulo na posição da ROI, redimensiona a ROI e a salva como uma imagem. Caso contrário, exibe uma mensagem de falha.
+- Exibição do Resultado: Exibe o quadro do vídeo com a ROI rastreada, o tipo de rastreador utilizado e a taxa de quadros por segundo (FPS). O loop de exibição pode ser interrompido pressionando a tecla 'Esc'.
+- Liberação de Recursos: Após a conclusão do rastreamento, o vídeo é liberado e todas as janelas são fechadas.
 
 
 Executando o Código
